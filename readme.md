@@ -7,8 +7,10 @@ This is how you get around the CLI for Assembla, specifically when you want to p
 Make a directory entitled `p4-test` and then have another directory called `main`. In the `main` directory, make a `.travis.yml` file with the following directions:
 
 ```yaml
-dist: bionic
-install: skip
+language: ruby
+   rvm:
+    - 2.2
+    - jruby
 ```
 
 Here's some sample environment variables: 
