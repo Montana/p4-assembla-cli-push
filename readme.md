@@ -23,7 +23,7 @@ In `P4CLIENT` put what your workspace name is (can be anything), then run the fo
 p4 client -S //depot/main -o | p4 client -i
 ```
 
-Then make sure you go back to your environment variables to make sure they haven't changed: 
+The above command will save your `P4CLIENT` setting and then set it, so when you `reconcile` the proper files get pushed to Assembla. Then make sure you go back to your environment variables to make sure they haven't changed: 
 
 ```bash
  vim ~/.p4enviro
